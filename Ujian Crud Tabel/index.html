@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Membuat Crud Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>UJIAN MEMBUAT TABEL CRUD G2 ACADEMY</h1>
+    </div>
+    <h1>DAFTAR PESERTA</h1>
+    <table class="table-countainer">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                    <div>
+                        <label>Nama</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label>Asal</label>
+                        <input type="text" name="asal" id="asal">
+                    </div>
+                    <div>
+                        <label>Umur</label>
+                        <input type="text" name="umur" id="umur">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+
+            <td>
+                <table class="list" id="employeeList">
+                    <input class="input-dua" type="text" id="ketikan" onkeyup="myFunction()" placeholder="Cari nama disini....">
+                    <thead>
+                        <tr>
+                            <th> Name </th>
+                            <th> Asal </th>
+                            <th> Umur</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
